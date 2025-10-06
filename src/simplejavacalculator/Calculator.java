@@ -95,10 +95,10 @@ public class Calculator {
             return 1 / num;
         }
         if (newMode.equals(MonoOperatorModes.cos)) {
-            return Math.cos(Math.toRadians(num));
+            return Math.cos(num);
         }
         if (newMode.equals(MonoOperatorModes.sin)) {
-            return Math.sin(Math.toRadians(num));
+            return Math.sin(num);
         }
         if (newMode.equals(MonoOperatorModes.tan)) {
             if (num == 0 || num % 180 == 0 ) {
@@ -108,7 +108,7 @@ public class Calculator {
                 return NaN;
             }
 
-            return Math.tan(Math.toRadians(num));
+            return Math.tan(num);
         }
         if (newMode.equals(MonoOperatorModes.log)) {
             return log10(num);
